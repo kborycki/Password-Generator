@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <script
+      src="https://kit.fontawesome.com/33b7a3e375.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+  </head>
+  <body>
+    <form class="box">
+      <div class="header">
+        <i class="fa-solid fa-lock"></i>
+        <h1>Password Generator</h1>
+        <p>
+          Create strong and secure passwords to keep your account safe online.
+        </p>
+      </div>
+      <div class="password_result">
+        <div class="password_result__output">
+          <p class="password"></p>
+        </div>
+        <button class="btn_copy" type="button">
+          <i class="fa-regular fa-copy"></i>Copy
+        </button>
+      </div>
+      <div class="options">
+        <div class="option">
+          <label>Length</label>
+          <input type="number" class="length" min="4" max="20" value="10" />
+        </div>
+        <div class="option">
+          <label>Uppercase</label>
+          <input type="checkbox" class="uppercase" checked />
+        </div>
+        <div class="option">
+          <label>Lowercase</label>
+          <input type="checkbox" class="lowercase" checked />
+        </div>
+        <div class="option">
+          <label>Special Characters</label>
+          <input type="checkbox" class="symbols" checked />
+        </div>
+        <div class="option">
+          <label>Numbers</label>
+          <input type="checkbox" class="numbers" checked />
+        </div>
+        <button type="button" class="btn">Generate Password</button>
+      </div>
+    </form>
+    <script src="dist/js/main.min.js"></script>
+  </body>
+</html>
